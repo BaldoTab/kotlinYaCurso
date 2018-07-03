@@ -1,11 +1,34 @@
 
 fun main(params: Array<String>) {
-    println("Ingrese el primer valor:")
-    val value1 = readLine()!!.toInt()
-    println("Ingrese el segundo valor:")
-    val value2 = readLine()!!.toInt()
-    var result = value1 + value2
-    println("$value1 + $value2 = $result")
-    result = value1 * value2
-    println("$value1 x $value2 = $result")
+    println("Ingrese la nota del examen:")
+    val grade = readLine()!!.toInt()
+
+    if (isPassed(grade)) {
+        println("Passed!")
+        println(congratulationsMessage(grade))
+    } else {
+        println("Not passed!")
+    }
+
+}
+
+fun isPassed(grade: Int) : Boolean {
+    val minPassGrade = 5
+    return (grade >= minPassGrade)
+}
+
+fun congratulationsMessage(grade: Int) :String {
+    if (grade == 10) {
+        return "You are a fucking boss"
+    }
+
+    if (grade > 7) {
+        return "You are a great student"
+    }
+
+    if (grade > 5) {
+        return "You are a good student"
+    }
+
+    return "You should study a bit more"
 }
