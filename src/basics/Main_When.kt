@@ -1,3 +1,5 @@
+package basics
+
 fun main(parametro: Array<String>) {
     print("Ingrese coordenada x del punto:")
     val x = readLine()!!.toInt()

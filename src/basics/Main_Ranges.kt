@@ -1,4 +1,4 @@
-
+package basics
 fun main(params: Array<String>) {
     val digit = 1..9
     val dozen = 1..12

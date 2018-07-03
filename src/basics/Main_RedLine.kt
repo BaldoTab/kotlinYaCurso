@@ -1,4 +1,4 @@
-
+package basics
 fun main(params: Array<String>) {
     println("Ingrese la nota del examen:")
     val grade = readLine()!!.toInt()
