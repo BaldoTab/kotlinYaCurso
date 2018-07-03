@@ -30,7 +30,16 @@ fun exercise1(): String {
 }
 
 fun getSquarePerimeter(squareSide: Int) : Int {
-    return squareSide * 4
+    val sides = 4
+
+    var counter = 0
+    var result = 0
+    do {
+        result += squareSide
+        counter++
+    } while(counter < sides)
+
+    return result
 }
 
 fun getSquareSurface(squareSide: Int) : Int {
