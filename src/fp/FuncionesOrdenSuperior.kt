@@ -15,13 +15,13 @@ fun main(params: Array<String>) {
     println("La división entre 10 y 5 es ${operar(10, 5, ::dividir)}")
 }
 
-fun operar(v1: Int, v2: Int, fn: (Int, Int) -> Int) : Int {
+private fun operar(v1: Int, v2: Int, fn: (Int, Int) -> Int) : Int {
     return fn(v1, v2)
 }
 
-fun sumar(x1: Int, x2: Int) = x1 + x2
+private fun sumar(x1: Int, x2: Int) = x1 + x2
 
-fun restar(x1: Int, x2: Int) = x1 - x2
+private fun restar(x1: Int, x2: Int) = x1 - x2
 
 fun multiplicar(x1: Int, x2: Int) = x1 * x2
 
