@@ -4,7 +4,7 @@ fun main(params: Array<String>) {
     val array1 = IntArray(10)
     for (i in array1.indices)
         array1[i] = ((Math.random() * 100)).toInt()
-    println("Impresion de todo el arreglo")
+    println("Impresion de todo el array")
     for (elemento in array1)
         print("$elemento ")
     println()
